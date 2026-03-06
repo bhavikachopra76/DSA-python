@@ -1,7 +1,7 @@
 def numeric_hashing(number, lt):
     d = {}
-    for x in range(len(lt)):
-        d[lt[x]] = d.get(lt[x] , 0) + 1
+    for x in lt:
+        d[x] = d.get(x , 0) + 1
     print(f"frequency of {number} is: {d.get(number , 0)}")
 
 n = int(input("Enter number of elements: "))

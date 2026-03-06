@@ -1,9 +1,6 @@
 def check_frequency(c , st):
     cleaned = st.replace(" ", "")
     lst = [0] * 256
-    # for i in range(len(cleaned)):
-    #     idx = ord(cleaned[i])
-    #     lst[idx] = lst[idx] + 1
     for i in range(len(cleaned)):
         idx = ord(cleaned[i])
         lst[idx] = lst[idx] + 1
